@@ -1,0 +1,25 @@
+{
+  "name": "mongoose-scraper",
+  "version": "1.0.0",
+  "description": "This web app displays the latest real news articles and allows users to comment on the articles.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elmather89/mongoose-scraper.git"
+  },
+  "keywords": [
+    "mongoose",
+    "cheerio",
+    "web",
+    "scraper"
+  ],
+  "author": "emather",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elmather89/mongoose-scraper/issues"
+  },
+  "homepage": "https://github.com/elmather89/mongoose-scraper#readme"
+}
