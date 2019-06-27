@@ -6,3 +6,16 @@
     background-size: cover;
     position: relative;
   }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  a {
+    font-size: 40px;
+    color: black;
+  }
+
+  a:hover {
+    color: rgb(92, 92, 92);
+  }
