@@ -29,7 +29,10 @@ var db = require("./models");
 // connect mongo db
 // This code should connect mongoose to your remote mongolab database if deployed, 
 // but otherwise will connect to the local mongoScraper database on your computer.
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoScraper";
+
+// mongodb://localhost/mongoScraper
+// mongodb://liz:elmather1@ds129670.mlab.com:29670/heroku_tn9gk877
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://liz:elmather1@ds129670.mlab.com:29670/heroku_tn9gk877";
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true } );
 
 // start server
