@@ -30,7 +30,7 @@ var db = require("./models");
 // This code should connect mongoose to your remote mongolab database if deployed, 
 // but otherwise will connect to the local mongoScraper database on your computer.
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoScraper";
-mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
+mongoose.connect(MONGODB_URI);
 
 // start server
 app.listen(PORT, function () {
