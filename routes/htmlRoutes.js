@@ -6,11 +6,19 @@ var moment = require('moment');
 var cheerio = require("cheerio");
 
 module.exports = function (app) {
+
+    // load index page
     app.get("/", function (req, res) {
-        db.Article.find({}).then(function (dbArticle) {
-            res.json(dbArticle);
-        }).catch(function (err) {
-            res.json(err);
+        db.Article.find({}).then(function (dbArticles) {
+            res.render("index", {
+                articles: dbArticles
+            });
         });
     });
+
+    // Render 404 page for any unmatched routes
+    app.get("*", function (req, res) {
+        res.render("404");
+    });
+
 };
